@@ -2,10 +2,9 @@ package main.java;
 
 /**
  * Created with IntelliJ IDEA.
- * User: seattlecamper
+ * User: Alan Derrick
  * Date: 10/13/12
  * Time: 5:10 PM
- * To change this template use File | Settings | File Templates.
  */
 // file: EmptyFrame.java
 // Adapted from Core Java, vol.1, by Horstmann & Cornell
@@ -23,7 +22,7 @@ class GetQuote extends JFrame {
         setLocation(10,200); // default is 0,0 (top left corner)
 
         /**
-         * Window Listeners (this ends the program when the window is closed)
+         * Window Listeners
          */
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
