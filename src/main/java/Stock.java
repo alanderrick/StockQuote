@@ -23,24 +23,50 @@ public class Stock {
         this.price = price;
     }
 
-    // getter & setter methods
+    /**
+     *
+     * @return the stock symbol
+     */
     public String getSymbol() {
         return symbol;
     }
+
+    /**
+     *
+     * @param symbol The symbol is a stock exchange symbol
+     */
     public void setSymbol(String symbol) {
         this.symbol = symbol;
     }
 
+    /**
+     *
+     * @return the actual name of the company
+     */
     public String getStockName(){
         return stockName;
     }
+
+    /**
+     *
+     * @param name The name is the actual name of the company
+     */
     public void setStockName(String name) {
         this.stockName = name;
     }
 
+    /**
+     *
+     * @return the price of the stock
+     */
     public String getPrice() {
         return price;
     }
+
+    /**
+     *
+     * @param price The price is the price of the stock
+     */
     public void setPrice(String price) {
         this.price = price;
     }
