@@ -33,7 +33,7 @@ class GetQuote extends JFrame {
 
     public static void main(String[] args) {
         JFrame f = new GetQuote();
-        f.show();
+        f.setVisible(true);
     } //main
 } //class GetQuote
 
