@@ -1,7 +1,7 @@
 package main.java;
 
 /**
- * Created with IntelliJ IDEA.
+ * Created with IDEA.
  * User: Alan Derrick
  * Date: 10/13/12
  * Time: 5:53 PM

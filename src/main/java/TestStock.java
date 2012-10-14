@@ -5,11 +5,10 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created with IntelliJ IDEA.
- * User: seattlecamper
+ * Created with IDEA.
+ * User: Alan Derrick
  * Date: 10/13/12
  * Time: 6:09 PM
- * To change this template use File | Settings | File Templates.
  */
 public class TestStock {
 

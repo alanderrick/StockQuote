@@ -1,13 +1,11 @@
 package main.java;
 
 /**
- * Created with IntelliJ IDEA.
+ * Created with IDEA.
  * User: Alan Derrick
  * Date: 10/13/12
  * Time: 5:10 PM
  */
-// file: EmptyFrame.java
-// Adapted from Core Java, vol.1, by Horstmann & Cornell
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
@@ -39,7 +37,7 @@ class GetQuote extends JFrame {
 
 
 /* NOTES:
-	WindowAdapter() is class that implements WindowListers
+	WindowAdapter() is class that implements WindowListeners
 	with null methods for all the 7 methods of WindowListeners!
 	It is found in java.awt.event.*.
  */
