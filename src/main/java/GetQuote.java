@@ -14,6 +14,9 @@ import java.awt.event.ActionListener;
 
 
 public class GetQuote extends JFrame {
+
+    String symbol;
+
     public JPanel createContentPane (){
 
         // Create a bottom JPanel to place everything on.
@@ -59,15 +62,13 @@ public class GetQuote extends JFrame {
 
 
         // Create buttons using the syntax used before.
-        // TODO: symbol now contains the user entered text, but it goes out of scope.
-        // TODO: how do I manage to keep this value for use when my program goes online?
         JButton priceButton = new JButton("Get Price");
         priceButton.setLocation(0, 0);
         priceButton.setSize(100, 30);
         priceButton.setToolTipText("Pulls stock quote");
         priceButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
-                String symbol = inputField.getText();
+                symbol = inputField.getText();
                 System.out.println(symbol); // demonstrates getText() worked
             }
         });
