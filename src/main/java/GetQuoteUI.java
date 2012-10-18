@@ -69,7 +69,7 @@ public class GetQuoteUI extends JFrame {
         priceButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
                 symbol = inputField.getText();
-                System.out.println(symbol); // demonstrates getText() worked
+                System.out.println(symbol); // demonstrates getText() worked by console output
             }
         });
         buttonPanel.add(priceButton);
