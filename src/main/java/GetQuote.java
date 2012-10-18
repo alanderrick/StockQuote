@@ -26,7 +26,7 @@ public class GetQuote extends JFrame {
         panel.setLayout(null);
 
         JButton quitButton = new JButton("Quit");
-        quitButton.setBounds(50, 60, 80, 30);
+        quitButton.setBounds(50, 120, 80, 30);
         quitButton.setToolTipText("Exit the application");
         quitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
@@ -35,7 +35,7 @@ public class GetQuote extends JFrame {
         });
 
         JButton getButton = new JButton("Quote");
-        getButton.setBounds(150, 60, 80, 30);
+        getButton.setBounds(150, 120, 80, 30);
         getButton.setToolTipText("Pulls stock quote");
         getButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
