@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class GetQuote extends JFrame {
+public class GetQuoteUI extends JFrame {
 
     String symbol;
 
@@ -96,7 +96,7 @@ public class GetQuote extends JFrame {
         JFrame frame = new JFrame("StockQuote v1.0");
 
         //Create and set up the content pane.
-        GetQuote demo = new GetQuote();
+        GetQuoteUI demo = new GetQuoteUI();
         frame.setContentPane(demo.createContentPane());
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -113,4 +113,4 @@ public class GetQuote extends JFrame {
             }
         });
     } // end main
-} // end class GetQuote
+} // end class GetQuoteUI
