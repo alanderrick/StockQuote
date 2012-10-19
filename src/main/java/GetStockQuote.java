@@ -6,7 +6,7 @@ package main.java;
  * Date: 10/18/12
  * Time: 4:57 PM
  */
-import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.IOUtils; // commons-io-2.4.jar file in lib supplies this
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
