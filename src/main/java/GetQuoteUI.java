@@ -62,7 +62,7 @@ public class GetQuoteUI extends JFrame {
         JPanel textPanel = new JPanel();
         textPanel.setLayout(null);
         textPanel.setLocation(10, 40);
-        textPanel.setSize(250, 30);
+        textPanel.setSize(450, 30);
         totalGUI.add(textPanel);
 
         /**
@@ -81,7 +81,7 @@ public class GetQuoteUI extends JFrame {
          */
         final JTextField outputField = new JTextField(16);
         outputField.setLocation(110, 0);
-        outputField.setSize(100,30);
+        outputField.setSize(350, 30);
         outputField.setHorizontalAlignment(0);
         textPanel.add(outputField);
 
@@ -97,6 +97,7 @@ public class GetQuoteUI extends JFrame {
 
 
         /**
+         * TODO: make clicking of button output data to outputField
          * Create "Get Price" button using the syntax used before.
          * Create a text tool tip if you mouse over the button
          * Give button action: put text from inputField into variable symbol (of type String)
@@ -151,7 +152,7 @@ public class GetQuoteUI extends JFrame {
         GetQuoteUI demo = new GetQuoteUI();
         frame.setContentPane(demo.createContentPane());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(250, 190);
+        frame.setSize(550, 190);
         frame.setVisible(true);
     } // end createAndShowGUI
 

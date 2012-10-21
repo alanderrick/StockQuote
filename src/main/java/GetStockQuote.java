@@ -12,6 +12,9 @@ import java.io.InputStream;
 import java.io.StringWriter;
 import java.net.URL;
 
+// TODO analyze code says Probable Bugs (see rest of comment field & code below):
+// 1) Variable 'inputStream' initializer 'null' is redundant
+// 2) Variable 'stringWriter' initializer 'null' is redundant
 public class GetStockQuote {
     public static String getQuote(String sym) throws IOException {
 
