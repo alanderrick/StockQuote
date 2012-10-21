@@ -2,7 +2,7 @@ package main.java;
 
 /**
  * Created with IntelliJ IDEA.
- * User: seattlecamper
+ * User: Alan Derrick
  * Date: 10/18/12
  * Time: 4:57 PM
  */
@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.StringWriter;
 import java.net.URL;
 
-// TODO analyze code says Probable Bugs (see rest of comment field & code below):
+// TODO analyze code says Probable Bugs (bugs in comments below):
 // 1) Variable 'inputStream' initializer 'null' is redundant
 // 2) Variable 'stringWriter' initializer 'null' is redundant
 public class GetStockQuote {

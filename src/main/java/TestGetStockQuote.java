@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Created with IntelliJ IDEA.
- * User: seattlecamper
+ * User: Alan Derrick
  * Date: 10/21/12
  * Time: 12:05 PM
  * Purpose: basic test for GetStockQuote

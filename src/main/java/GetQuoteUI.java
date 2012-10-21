@@ -11,6 +11,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 
 
 public class GetQuoteUI extends JFrame {
@@ -97,7 +98,8 @@ public class GetQuoteUI extends JFrame {
 
 
         /**
-         * TODO: make clicking of button output data to outputField
+         * TODO: make clicking of button output data from "GetStockQuote.java" to outputField
+         *
          * Create "Get Price" button using the syntax used before.
          * Create a text tool tip if you mouse over the button
          * Give button action: put text from inputField into variable symbol (of type String)
@@ -110,9 +112,16 @@ public class GetQuoteUI extends JFrame {
         priceButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
                 symbol = inputField.getText();
-                System.out.println(symbol); // demonstrates getText() worked by console output
-                outputField.setText(symbol);// demonstrates getText() worked by output to UI
-                // getStockQuote.getQuote(symbol);
+                // System.out.println(symbol); // demonstrates getText() worked by console output
+                // outputField.setText(symbol);// demonstrates getText() worked by output to UI
+                try {
+                GetStockQuote.getQuote(symbol);
+                outputField.setText(GetStockQuote.stringWriter.toString());
+                }
+                catch(IOException exception)
+                {
+                    System.out.println(exception);
+                }
             }
         });
         buttonPanel.add(priceButton);
