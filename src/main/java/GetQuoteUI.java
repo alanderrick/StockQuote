@@ -98,8 +98,6 @@ public class GetQuoteUI extends JFrame {
 
 
         /**
-         * TODO: make clicking of button output data from "GetStockQuote.java" to outputField
-         *
          * Create "Get Price" button using the syntax used before.
          * Create a text tool tip if you mouse over the button
          * Give button action: put text from inputField into variable symbol (of type String)
@@ -111,12 +109,13 @@ public class GetQuoteUI extends JFrame {
         priceButton.setToolTipText("Pulls stock quote");
         priceButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
+
                 symbol = inputField.getText();
-                // System.out.println(symbol); // demonstrates getText() worked by console output
-                // outputField.setText(symbol);// demonstrates getText() worked by output to UI
+
                 try {
-                GetStockQuote.getQuote(symbol);
-                outputField.setText(GetStockQuote.stringWriter.toString());
+                    String downloadedInfo;
+                    downloadedInfo = GetStockQuote.getQuote(symbol);
+                    outputField.setText(downloadedInfo);
                 }
                 catch(IOException exception)
                 {

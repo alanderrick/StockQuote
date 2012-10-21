@@ -20,8 +20,8 @@ public class GetStockQuote {
 
         String params = "snl1d1t1";
         String theUrl = "http://download.finance.yahoo.com/d/quotes.csv?s=" + sym + "&f=" + params;
-        InputStream inputStream = null;
-        StringWriter stringWriter = null;
+        InputStream inputStream;
+        StringWriter stringWriter;
         URL url = new URL(theUrl);
         inputStream = url.openStream();
         stringWriter = new StringWriter();
