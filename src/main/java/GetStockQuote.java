@@ -15,7 +15,7 @@ import java.net.URL;
 public class GetStockQuote {
     public static String getQuote(String sym) throws IOException {
 
-        String params = "sl1d1t1c1ohgv";
+        String params = "snl1d1t1";
         String theUrl = "http://download.finance.yahoo.com/d/quotes.csv?s=" + sym + "&f=" + params;
         InputStream inputStream = null;
         StringWriter stringWriter = null;

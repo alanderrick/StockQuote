@@ -19,41 +19,76 @@ public class GetQuoteUI extends JFrame {
 
     public JPanel createContentPane (){
 
-        // Create a bottom JPanel to place everything on.
+        /**
+         * Create a bottom JPanel to place everything on.
+         */
         JPanel totalGUI = new JPanel();
         totalGUI.setLayout(null);
 
 
-        // Creation of a Panel to contain the "Enter Ticker Symbol:" label
+        /**
+         * Create a Panel to contain the "Enter Symbol:" & "Result:" JLabels
+         */
         JPanel titlePanel = new JPanel();
         titlePanel.setLayout(null);
         titlePanel.setLocation(10, 0);
         titlePanel.setSize(250, 30);
         totalGUI.add(titlePanel);
 
-        JLabel redLabel = new JLabel("Enter Ticker Symbol:");
+        /**
+         * Create JLabel, in red, on left that says Enter Symbol:
+         */
+        JLabel redLabel = new JLabel("Enter Symbol:");
         redLabel.setLocation(0, 0);
         redLabel.setSize(150, 40);
-        redLabel.setHorizontalAlignment(0);
+        redLabel.setHorizontalAlignment(10);
         redLabel.setForeground(Color.red);
         titlePanel.add(redLabel);
 
+        /**
+         * Create JLabel, in blue, on right that says Result:
+         */
+        JLabel blueLabel = new JLabel("Result:");
+        blueLabel.setLocation(110, 0);
+        blueLabel.setSize(150, 40);
+        blueLabel.setHorizontalAlignment(10);
+        blueLabel.setForeground(Color.blue);
+        titlePanel.add(blueLabel);
 
-        // Creation of a Panel to contain the user-entered text field.
+
+        /**
+         * Create a Panel (textPanel) to contain the text fields.
+         */
         JPanel textPanel = new JPanel();
         textPanel.setLayout(null);
         textPanel.setLocation(10, 40);
         textPanel.setSize(250, 30);
         totalGUI.add(textPanel);
 
+        /**
+         * Create text field for user input
+         * Place inputField into textPanel
+         */
         final JTextField inputField = new JTextField(16);
         inputField.setLocation(0, 0);
         inputField.setSize(100, 30);
         inputField.setHorizontalAlignment(0);
         textPanel.add(inputField);
 
+        /**
+         * Create text field for output of results
+         * Place outputField into textpanel
+         */
+        final JTextField outputField = new JTextField(16);
+        outputField.setLocation(110, 0);
+        outputField.setSize(100,30);
+        outputField.setHorizontalAlignment(0);
+        textPanel.add(outputField);
 
-        // Creation of a Panel to contain all the JButtons.
+
+        /**
+         * Create a Panel to contain "get price" and "quit" JButtons.
+         */
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(null);
         buttonPanel.setLocation(10, 80);
@@ -61,7 +96,12 @@ public class GetQuoteUI extends JFrame {
         totalGUI.add(buttonPanel);
 
 
-        // Create buttons using the syntax used before.
+        /**
+         * Create "Get Price" button using the syntax used before.
+         * Create a text tool tip if you mouse over the button
+         * Give button action: put text from inputField into variable symbol (of type String)
+         * Adds button to the buttonPanel
+         */
         JButton priceButton = new JButton("Get Price");
         priceButton.setLocation(0, 0);
         priceButton.setSize(100, 30);
@@ -70,10 +110,18 @@ public class GetQuoteUI extends JFrame {
             public void actionPerformed(ActionEvent event) {
                 symbol = inputField.getText();
                 System.out.println(symbol); // demonstrates getText() worked by console output
+                outputField.setText(symbol);// demonstrates getText() worked by output to UI
+                // getStockQuote.getQuote(symbol);
             }
         });
         buttonPanel.add(priceButton);
 
+        /**
+         * Create "Quit" button using the syntax used before.
+         * Create a text tool tip if you mouse over the button
+         * Give button action: to quit the application
+         * Adds button to the buttonPanel
+         */
         JButton quitButton = new JButton("Quit");
         quitButton.setLocation(120, 0);
         quitButton.setSize(100, 30);
@@ -95,14 +143,18 @@ public class GetQuoteUI extends JFrame {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("StockQuote v1.0");
 
-        //Create and set up the content pane.
+        /**
+         * Create and set up the content pane.
+         * Sets it up so that if the JFrame is closed by a method other than the quit
+         * button that the application will still end.
+         */
         GetQuoteUI demo = new GetQuoteUI();
         frame.setContentPane(demo.createContentPane());
-
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(250, 190);
         frame.setVisible(true);
     } // end createAndShowGUI
+
 
     public static void main(String[] args) {
         //Schedule a job for the event-dispatching thread:
