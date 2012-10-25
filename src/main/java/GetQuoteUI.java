@@ -63,7 +63,7 @@ public class GetQuoteUI extends JFrame {
         JPanel textPanel = new JPanel();
         textPanel.setLayout(null);
         textPanel.setLocation(10, 40);
-        textPanel.setSize(450, 30);
+        textPanel.setSize(550, 30);
         totalGUI.add(textPanel);
 
         /**
@@ -80,10 +80,11 @@ public class GetQuoteUI extends JFrame {
          * Create text field for output of results
          * Place outputField into textpanel
          */
-        final JTextField outputField = new JTextField(16);
+        final JTextField outputField = new JTextField(25);
         outputField.setLocation(110, 0);
-        outputField.setSize(350, 30);
-        outputField.setHorizontalAlignment(0);
+        outputField.setSize(425, 30);
+        // outputField.setHorizontalAlignment(0);
+        outputField.setHorizontalAlignment(JTextField.LEFT);
         textPanel.add(outputField);
 
 
@@ -160,7 +161,7 @@ public class GetQuoteUI extends JFrame {
         GetQuoteUI demo = new GetQuoteUI();
         frame.setContentPane(demo.createContentPane());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(550, 190);
+        frame.setSize(650, 190);
         frame.setVisible(true);
     } // end createAndShowGUI
 
