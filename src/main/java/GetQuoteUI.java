@@ -83,7 +83,6 @@ public class GetQuoteUI extends JFrame {
         final JTextField outputField = new JTextField(25);
         outputField.setLocation(110, 0);
         outputField.setSize(425, 30);
-        // outputField.setHorizontalAlignment(0);
         outputField.setHorizontalAlignment(JTextField.LEFT);
         textPanel.add(outputField);
 
