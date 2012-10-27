@@ -1,0 +1,14 @@
+Usually I name test classes like this:
+
+StockTest rather than TestStock
+
+I liked that your Stock class had 100% coverage but you need to write more tests for the other classes.
+
+you need to use packages to separate your code better.
+
+Unless I am missing something I don't see any price or stock info in the UI yet.
+
+You need to document your code better.
+
+What is your plan for completing this work?
+
