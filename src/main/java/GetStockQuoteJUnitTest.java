@@ -10,7 +10,7 @@ import static org.junit.Assert.assertTrue;
  * Time: 12:05 PM
  * Purpose: basic test for GetStockQuote
  */
-public class TestGetStockQuote {
+public class GetStockQuoteJUnitTest {
 
     @Test
             public void basicTest() throws  Exception{

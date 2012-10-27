@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  * Date: 10/13/12
  * Time: 6:09 PM
  */
-public class TestStock {
+public class StockJUnitTest {
 
     private String expectedSymbol;
     private String expectedName;
