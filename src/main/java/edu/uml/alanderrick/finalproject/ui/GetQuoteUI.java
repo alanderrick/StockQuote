@@ -1,4 +1,4 @@
-package main.java;
+package main.java.edu.uml.alanderrick.finalproject.ui;
 
 /**
  * Created with IDEA.
@@ -6,6 +6,8 @@ package main.java;
  * Date: 10/13/12
  * Time: 5:10 PM
  */
+
+import main.java.GetStockQuote;
 
 import javax.swing.*;
 import java.awt.*;

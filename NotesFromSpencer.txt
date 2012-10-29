@@ -1,3 +1,54 @@
+After I successfully got the update things look better.
+
+Here's some task you might be able to complete for the final version
+
+- Enhance the UI to show more than one symbol at a time. The use of JList or JTable might be useful.
+Use an Add button to prompt the user for additional symbols
+
+- Automatically save stock symbols so when the app starts it automatically displays previous entries.
+The JDK's preferences class might be handy here.
+
+- History
+Show the stocks hi and low prices for a given period of time.
+That period of time can be pre-set like 1 day , 1 week, 6 months and 1 year
+
+You don't have to do all of these things but try to do some of them.
+
+also, under src create a new directory called test
+in test create a new directory called java
+under java create a directory structure that matches the directories under main/java
+(these directories are your packages)
+Put your test code in these directories.
+Test code goes in the same package as the src code, but under /test/java not /main/java
+Does this make sense?
+
+
+
+What kind of problems are you having with packages?
+Packages are just directories on the file system.
+
+In your code:
+the first line of the Java class is the package statement.
+When classes use code from classes in other packages, the import statement is used.
+I will commit an example of this.
+Do you know how packages relate to the classpath?
+
+Using JavaDoc is really simple! There is not much to teach here. I also assumed anyone in advance class
+would know how to do JavaDoc already or be able to quickly pick it up on their own. That said here are some quick
+getting started tips:
+
+You start comments with /**
+You use various tags to denote different types of data.
+e.g
+@author
+
+Idea even generates the tag when you type
+/**
+
+at the start of a method or class.
+
+------------------------------------------------------
+
 Usually I name test classes like this:
 
 StockTest rather than TestStock
