@@ -1,3 +1,37 @@
+10.29.12 student comments
+
+The Good:
+I was able to add 52 week high & low to output field.
+I changed the size of the UI to accommodate that
+I changed the package of the UI to demonstrate package understanding
+I moved the testing classes to src/test/java
+I ran the UI and it shows the hi & low as coded
+I ran ant from the CLI, and the JUnit tests in IDEA successfully after said changes
+
+
+The Bad: Having some issues with Javadoc and Junit testing, see below:
+
+1. You said I need to document my code better, but I don't really feel like I know
+how to add any more Javadoc than I've added.  I tried running Javadoc on my files at
+the CLI thinking it might auto-generate some.  I think it generated some HTML files,
+but it didn't actually add any useful Javadoc to the code.  I'm going to need some
+help with this.  I don't want to either give up on it, or have you waive the requirement.
+I need to learn this.  I am OK with either you showing me how to do this now, or with
+you docking me points at turn in, and then showing me how then.  But there isn't any
+point in losing points and not understanding what's wrong either.
+
+2. I was also unable to write any Javadoc for the testing classes.  I'm not sure
+if I should be doing that, or what to write if I am supposed to do that.
+
+3. You mentioned previously my testing coverage of Stock.java is good, but I need
+more.  At that time I had a test for GetStockQuote.  I don't think you're asking for
+more tests of that class since it's really short.  So, I think you want me to write
+JUnit tests for my UI class.  Most of that class is setting up UI pieces.  There aren't
+just a lot of methods to test.  I'm confused where you wanted more JUnit tests.
+
+
+-------------------
+
 After I successfully got the update things look better.
 
 Here's some task you might be able to complete for the final version
@@ -11,22 +45,21 @@ The JDK's preferences class might be handy here.
 - History
 Show the stocks hi and low prices for a given period of time.
 That period of time can be pre-set like 1 day , 1 week, 6 months and 1 year
->> DONE: I added in 52 week high & low to end of the string
 
 You don't have to do all of these things but try to do some of them.
 
-also, under src create a new directory called test >> DONE
-in test create a new directory called java >> DONE
-under java create a directory structure that matches the directories under main/java >> DONE
-(these directories are your packages) >> DONE
-Put your test code in these directories. >> DONE
-Test code goes in the same package as the src code, but under /test/java not /main/java >> DONE
-Does this make sense? >> DONE
+also, under src create a new directory called test
+in test create a new directory called java
+under java create a directory structure that matches the directories under main/java
+(these directories are your packages)
+Put your test code in these directories.
+Test code goes in the same package as the src code, but under /test/java not /main/java
+Does this make sense?
 
 
 
-What kind of problems are you having with packages? >> DONE; Not sure, seems to work now.
-Packages are just directories on the file system. >> DONE
+What kind of problems are you having with packages?
+Packages are just directories on the file system.
 
 In your code:
 the first line of the Java class is the package statement.
