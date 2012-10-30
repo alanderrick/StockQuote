@@ -13,9 +13,8 @@ import java.io.StringWriter;
 import java.net.URL;
 
 /**
- * Gets a String of information from yahoo
- * parms decides what information to get (a lot more is available than I use)
- * returns a string which I use in GetQuoteUI
+ * Gets a String of information from Yahoo! Finance
+ * Displays the string (the results) to user
  */
 public class GetStockQuote {
     public static String getQuote(String sym) throws IOException {

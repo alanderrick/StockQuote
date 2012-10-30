@@ -12,6 +12,7 @@ public class Stock {
     private String price;
 
     /**
+     * Constructor for Stock object
      *
      * @param symbol This is the symbol on the stock exchange
      * @param name   This is the actual name of the company
@@ -25,7 +26,7 @@ public class Stock {
 
     /**
      *
-     * @return the stock symbol
+     * @return symbol the stock exchange symbol, such as GOOG
      */
     public String getSymbol() {
         return symbol;
@@ -41,7 +42,7 @@ public class Stock {
 
     /**
      *
-     * @return the actual name of the company
+     * @return stockName the actual name of the company
      */
     public String getStockName(){
         return stockName;
@@ -49,7 +50,7 @@ public class Stock {
 
     /**
      *
-     * @param name The name is the actual name of the company
+     * @param name sets the actual name of the company
      */
     public void setStockName(String name) {
         this.stockName = name;
@@ -57,7 +58,7 @@ public class Stock {
 
     /**
      *
-     * @return the price of the stock
+     * @return price the price of the stock
      */
     public String getPrice() {
         return price;
@@ -65,7 +66,7 @@ public class Stock {
 
     /**
      *
-     * @param price The price is the price of the stock
+     * @param price sets the price is the price of the stock
      */
     public void setPrice(String price) {
         this.price = price;
