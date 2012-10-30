@@ -1,4 +1,4 @@
-package main.java.edu.uml.alanderrick.finalproject.ui;
+package main.java.ui;
 
 /**
  * Created with IDEA.
@@ -13,7 +13,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
+import java.io.IOException;
 
 
 public class GetQuoteUI extends JFrame {
@@ -65,7 +65,7 @@ public class GetQuoteUI extends JFrame {
         JPanel textPanel = new JPanel();
         textPanel.setLayout(null);
         textPanel.setLocation(10, 40);
-        textPanel.setSize(550, 30);
+        textPanel.setSize(650, 30);
         totalGUI.add(textPanel);
 
         /**
@@ -84,7 +84,7 @@ public class GetQuoteUI extends JFrame {
          */
         final JTextField outputField = new JTextField(25);
         outputField.setLocation(110, 0);
-        outputField.setSize(425, 30);
+        outputField.setSize(525, 30);
         outputField.setHorizontalAlignment(JTextField.LEFT);
         textPanel.add(outputField);
 
@@ -162,7 +162,7 @@ public class GetQuoteUI extends JFrame {
         GetQuoteUI demo = new GetQuoteUI();
         frame.setContentPane(demo.createContentPane());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(650, 190);
+        frame.setSize(750, 190);
         frame.setVisible(true);
     } // end createAndShowGUI
 

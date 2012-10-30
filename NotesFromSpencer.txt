@@ -11,21 +11,22 @@ The JDK's preferences class might be handy here.
 - History
 Show the stocks hi and low prices for a given period of time.
 That period of time can be pre-set like 1 day , 1 week, 6 months and 1 year
+>> DONE: I added in 52 week high & low to end of the string
 
 You don't have to do all of these things but try to do some of them.
 
-also, under src create a new directory called test
-in test create a new directory called java
-under java create a directory structure that matches the directories under main/java
-(these directories are your packages)
-Put your test code in these directories.
-Test code goes in the same package as the src code, but under /test/java not /main/java
-Does this make sense?
+also, under src create a new directory called test >> DONE
+in test create a new directory called java >> DONE
+under java create a directory structure that matches the directories under main/java >> DONE
+(these directories are your packages) >> DONE
+Put your test code in these directories. >> DONE
+Test code goes in the same package as the src code, but under /test/java not /main/java >> DONE
+Does this make sense? >> DONE
 
 
 
-What kind of problems are you having with packages?
-Packages are just directories on the file system.
+What kind of problems are you having with packages? >> DONE; Not sure, seems to work now.
+Packages are just directories on the file system. >> DONE
 
 In your code:
 the first line of the Java class is the package statement.
