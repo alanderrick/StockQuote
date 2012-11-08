@@ -1,3 +1,22 @@
+------------------- Comments from 11/2 ------------------
+
+Hi,
+
+Nice job on the tests and the code coverage.
+
+Here is a small clean up item. Can you separate your tests from the application code like this:
+
+├── src
+│   ├── main
+│   │   ├── java
+|   |── test
+│   │   ├── java
+
+and then update the build.xml?
+
+
+
+---------------------------------------------------------
 10.29.12 student comments
 
 The Good:
