@@ -1,4 +1,4 @@
-------------------- Comments from 11/2 ------------------
+------------------- Professor Comments from 11/2 ------------------
 
 Hi,
 
@@ -17,7 +17,7 @@ and then update the build.xml?
 
 
 ---------------------------------------------------------
-10.29.12 student comments
+10.29.12 student response
 
 I was able to add 52 week high & low to output field.
 I changed the size of the UI to accommodate that
@@ -28,7 +28,7 @@ I ran ant from the CLI, and the JUnit tests in IDEA successfully after said chan
 
 
 -------------------
-professor response:
+10.20.12 professor comments:
 
 Here's some task you might be able to complete for the final version
 
