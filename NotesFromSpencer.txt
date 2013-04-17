@@ -1,6 +1,5 @@
 10.29.12 student comments
 
-The Good:
 I was able to add 52 week high & low to output field.
 I changed the size of the UI to accommodate that
 I changed the package of the UI to demonstrate package understanding
@@ -9,30 +8,8 @@ I ran the UI and it shows the hi & low as coded
 I ran ant from the CLI, and the JUnit tests in IDEA successfully after said changes
 
 
-The Bad: Having some issues with Javadoc and Junit testing, see below:
-
-1. You said I need to document my code better, but I don't really feel like I know
-how to add any more Javadoc than I've added.  I tried running Javadoc on my files at
-the CLI thinking it might auto-generate some.  I think it generated some HTML files,
-but it didn't actually add any useful Javadoc to the code.  I'm going to need some
-help with this.  I don't want to either give up on it, or have you waive the requirement.
-I need to learn this.  I am OK with either you showing me how to do this now, or with
-you docking me points at turn in, and then showing me how then.  But there isn't any
-point in losing points and not understanding what's wrong either.
-
-2. I was also unable to write any Javadoc for the testing classes.  I'm not sure
-if I should be doing that, or what to write if I am supposed to do that.
-
-3. You mentioned previously my testing coverage of Stock.java is good, but I need
-more.  At that time I had a test for GetStockQuote.  I don't think you're asking for
-more tests of that class since it's really short.  So, I think you want me to write
-JUnit tests for my UI class.  Most of that class is setting up UI pieces.  There aren't
-just a lot of methods to test.  I'm confused where you wanted more JUnit tests.
-
-
 -------------------
-
-After I successfully got the update things look better.
+professor response:
 
 Here's some task you might be able to complete for the final version
 
@@ -54,11 +31,7 @@ under java create a directory structure that matches the directories under main/
 (these directories are your packages)
 Put your test code in these directories.
 Test code goes in the same package as the src code, but under /test/java not /main/java
-Does this make sense?
 
-
-
-What kind of problems are you having with packages?
 Packages are just directories on the file system.
 
 In your code:
@@ -67,9 +40,7 @@ When classes use code from classes in other packages, the import statement is us
 I will commit an example of this.
 Do you know how packages relate to the classpath?
 
-Using JavaDoc is really simple! There is not much to teach here. I also assumed anyone in advance class
-would know how to do JavaDoc already or be able to quickly pick it up on their own. That said here are some quick
-getting started tips:
+Using JavaDoc is really simple! Here are some quick getting started tips:
 
 You start comments with /**
 You use various tags to denote different types of data.
@@ -81,43 +52,5 @@ Idea even generates the tag when you type
 
 at the start of a method or class.
 
-------------------------------------------------------
-
-Usually I name test classes like this:
-
-StockTest rather than TestStock
->> I actually thought I read in the notes you wanted Test at the end.  I re-read the week 2 notes
->> and found you wanted StockTest or better StockJUnitTest.  I've renamed my test classes to
->> StockJUnitTest & GetStockQuoteJUnitTest.
-
-I liked that your Stock class had 100% coverage but you need to write more tests for the other classes.
->> I'll take another look at this.  I'm not actually sure I know how to test the other classes.  If
->> I can't figure it out, I'll need some help.  If you prefer, if I can't figure it out you can just
->> show me when I turn it in.  But if you go that route please SHOW me some tests, don't just say
->> you should have tested more.
-
-you need to use packages to separate your code better.
->> On 10/13 I sent you an email saying I was having problems with this.  You didn't address it in
->> your response to my email.
-
-Unless I am missing something I don't see any price or stock info in the UI yet.
->> If you put GOOG into the left box and click get price, it outputs "GOOG","Google Inc.",675.15,"10/26/2012","4:00pm"
->> If you put AAPL into the left box and click get price, it outputs, "AAPL","Apple Inc.",604.00,"10/26/2012","4:00pm"
->> I'm not sure why you aren't able to see it.  I've both commited AND pushed.
-
-You need to document your code better.
->> I'll take a look at this.  No one, including you, has ever taught me how to use JavaDoc.  I've
->> done my best to figure it out by reading online, but if I'm missing stuff it's because I don't
->> know how to do it & I'm doing it blindly.  So again, this may be to be something you grade me
->> down on - which is OK.  I just ask that when you grade me down, you ALSO give me good examples
->> of what you wanted so I'll know what's expected not just in this class - but in the world.
-
-What is your plan for completing this work?
-1. I've renamed the test-classes as requested.
-2. I'll look at writing more tests, but I'm reasonably sure if I haven't written a test for a method
-   it's because I don't know how to.
-3. I asked for help on packages on 10/13.  If you want me to use them, please help
-4. UI works on my computer, I don't know why it doesn't work for you.
-5. Apparently my attempt to teach myself to write JavaDoc has not worked.  I don't know what else
-   to say about my documentation.  It's the best documentation I've ever done in any class.
+** ALSO, usually I name test classes like this: StockTest rather than TestStock
 
